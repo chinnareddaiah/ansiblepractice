@@ -1,0 +1,10 @@
+---
+- hosts: webgroup
+  become: yes
+  roles:
+    - apache
+
+- hosts: dbgroup
+  become: yes
+  roles:
+    - loadbalancer
